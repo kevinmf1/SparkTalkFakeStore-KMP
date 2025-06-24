@@ -69,6 +69,9 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation(libs.icon.font.awesome)
             implementation(libs.navigation.compose)
+            // Tambahkan ini untuk menggunakan Icons.Outlined
+            implementation(libs.androidx.compose.material.icons.extended) // <-- Tambahkan baris ini
+
 
             // networking
 //            implementation(libs.ktor.logging)
