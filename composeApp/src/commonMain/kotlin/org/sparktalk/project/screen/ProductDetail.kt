@@ -52,6 +52,8 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
 import org.sparktalk.project.styles.AppFonts
 
+// Product Detail
+
 @Composable
 fun ProductDetail() {
     Scaffold(modifier = Modifier.safeContentPadding()) { paddingValues ->
@@ -216,6 +218,7 @@ fun ProductContent() {
 
             )
         }
+
 
     }
 }
