@@ -27,17 +27,14 @@ import androidx.navigation.compose.rememberNavController
 import org.sparktalk.project.screen.CartScreen
 import org.sparktalk.project.screen.CategoryScreen
 import org.sparktalk.project.screen.HomeScreen
-import org.sparktalk.project.screen.ProductDetail
 import org.sparktalk.project.screen.ProfileScreen
 import org.sparktalk.project.utils.SystemUiController
 
-// feature bottom navigation Bar style
 @Composable
 fun App() {
     MaterialTheme {
         SystemUiController.ConfigureSystemBars(Color.Gray, darkIcons = true)
         MainScreen()
-//        ProductDetail()
     }
 }
 
