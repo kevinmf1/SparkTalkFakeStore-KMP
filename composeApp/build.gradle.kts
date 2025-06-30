@@ -72,21 +72,12 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation(libs.icon.font.awesome)
             implementation(libs.navigation.compose)
-            // Tambahkan ini untuk menggunakan Icons.Outlined
-            implementation(libs.androidx.compose.material.icons.extended) // <-- Tambahkan baris ini
-
 
             // networking
             implementation(libs.bundles.ktor)
-//            implementation(libs.ktor.logging)
-//            implementation(libs.ktor.serialization)
-//            implementation(libs.ktor.client.core)
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.bundles.coil)
             implementation(libs.coil.compose)
-//            implementation(libs.ktor.client.okhttp)
-//            implementation(libs.ktor.client.darwin)
-
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
