@@ -30,8 +30,8 @@ fun App() {
 
     MaterialTheme {
         SystemUiController.ConfigureSystemBars(Color.Gray, darkIcons = true)
-//        MainScreen()
-        ProductDetail()
+        MainScreen()
+//        ProductDetail()
     }
 }
 

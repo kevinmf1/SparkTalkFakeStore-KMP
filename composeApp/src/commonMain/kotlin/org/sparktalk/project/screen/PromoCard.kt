@@ -29,7 +29,7 @@ fun PromoCard(
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 16.dp)
+            .padding(horizontal = 16.dp)
     ) {
         Card(
             shape = RoundedCornerShape(8.dp),

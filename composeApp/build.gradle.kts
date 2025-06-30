@@ -9,6 +9,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+    alias(libs.plugins.jetbrains.kotlin.serialization)
 }
 
 kotlin {
@@ -57,6 +58,8 @@ kotlin {
             implementation(libs.androidx.activity.compose)
             implementation(libs.ktor.client.okhttp)
             implementation(libs.kotlinx.coroutines.android)
+            implementation(libs.coil.network.ktor2)
+            implementation(libs.coil.network.ktor3)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -71,19 +74,27 @@ kotlin {
             implementation(libs.navigation.compose)
 
             // networking
+            implementation(libs.bundles.ktor)
 //            implementation(libs.ktor.logging)
-            implementation(libs.ktor.serialization)
-            implementation(libs.ktor.client.core)
+//            implementation(libs.ktor.serialization)
+//            implementation(libs.ktor.client.core)
             implementation(libs.kotlinx.coroutines.core)
+            implementation(libs.bundles.coil)
+            implementation(libs.coil.compose)
 //            implementation(libs.ktor.client.okhttp)
 //            implementation(libs.ktor.client.darwin)
 
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
+            implementation(libs.coil.network.ktor2)
+            implementation(libs.coil.network.ktor3)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
+        }
+        wasmJsMain.dependencies {
+            implementation(libs.coil.core.wasm.js)
         }
     }
 }
