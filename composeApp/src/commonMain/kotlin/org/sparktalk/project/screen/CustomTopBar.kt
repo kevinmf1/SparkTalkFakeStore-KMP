@@ -1,5 +1,6 @@
 package org.sparktalk.project.screen
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -35,6 +36,7 @@ fun CustomTopBar(
     Box(
         modifier = Modifier
             .fillMaxWidth()
+            .background(Color.White)
             .drawBehind {
                 // Top border
                 drawLine(
@@ -74,7 +76,7 @@ fun CustomTopBar(
                     }
                 )
             } else {
-                Spacer(modifier = Modifier.width(24.dp))
+                Spacer(modifier = Modifier.width(32.dp))
             }
 
             Text(
@@ -102,7 +104,7 @@ fun CustomTopBar(
                     }
                 }
 
-                else -> Spacer(modifier = Modifier.width(24.dp))
+                else -> Spacer(modifier = Modifier.width(32.dp))
             }
         }
     }

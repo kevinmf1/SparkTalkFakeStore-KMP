@@ -13,6 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         AppContext.setUp(applicationContext)
+        window.navigationBarColor = android.graphics.Color.BLACK
 
         setContent {
             App()
